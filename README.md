@@ -82,25 +82,35 @@ RequestMapping 使用使用示例 https://www.oschina.net/translate/using-the-sp
 
 排错工具 https://yq.aliyun.com/articles/69520?&utm_campaign=sys&utm_medium=market&utm_source=edm_email&msctype=email&mscareaid=cn&mscsiteid=cn&mscmsgid=7130117022400821388&
 
+
 垃圾回收 http://www.infoq.com/cn/news/2017/03/garbage-collection-algorithm?utm_source=infoq&utm_medium=popular_widget&utm_campaign=popular_content_list&utm_content=homepage
+
 
 log https://logback.qos.ch/manual/mdc.html#autoMDC
 
+
 权限框架比较 http://www.oschina.net/question/1261086_228410
 
+
 https://github.com/jobbole/awesome-java-cn#ancients
+
 
 cron-utils https://github.com/jmrozanec/cron-utils-spring
 
 time https://github.com/jmrozanec/htime
 
+
 String https://www.zhihu.com/question/20101840
+
 
 生产.java源代码 https://github.com/square/javapoet ,可以用来构建一些基础的代码,必须一些CRUD
 
+
 Spring Framework Code Style https://github.com/spring-projects/spring-framework/blob/7ee0abe20d230c782a76fedf5c08524c87747576/src/idea/spring-framework.xml
 
+
 使用Spring WebSockets聊天应用程序 https://github.com/salmar/spring-websocket-chat
+
 
 Spring Cache https://my.oschina.net/u/3080373/blog/1524728
 
@@ -108,12 +118,17 @@ spring boot
 
 Spring Boot启动过程及回调接口汇总 https://segmentfault.com/a/1190000006918229
 https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/
-后台运行配置 http://blog.didispace.com/spring-boot-run-backend/
-https://segmentfault.com/l/1500000009515571  - 调度示例 https://my.oschina.net/jack90john/blog/1506474
-spring cloud
 
+后台运行配置 http://blog.didispace.com/spring-boot-run-backend/
+https://segmentfault.com/l/1500000009515571  
+
+- 调度示例 https://my.oschina.net/jack90john/blog/1506474
+
+spring cloud
 http://www.itmuch.com/spring-cloud-sum-eureka/
+
 文档 https://springcloud.cc/spring-cloud-dalston.html
+
 工具类集合 https://jodd.org
 
 分布式ID https://docs.mongodb.com/manual/reference/method/ObjectId/
@@ -122,8 +137,12 @@ http://www.itmuch.com/spring-cloud-sum-eureka/
 
 规范? https://github.com/cxxr/better-java/blob/master/README.zh-cn.md
 
+
 中文分词等 https://github.com/hankcs/HanLP
+
 
 网页聊天 通信 可以借鉴 https://github.com/mrniko/netty-socketio
 
+
 Java服务器应用程序的应用程序性能监视的开源解决方案 https://github.com/stagemonitor/stagemonitor
+
