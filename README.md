@@ -7,39 +7,65 @@ java
 
 jackson 字段动态过滤
 https://github.com/bohnman/squiggly-filter-jackson
+
 https://github.com/narusas/SpringMvcJacksonFilter
+
 https://github.com/shihyuho/jackson-dynamic-filter
+
 Json 2 Pojo https://github.com/joelittlejohn/jsonschema2pojo
+
 User-agent-utils http://www.bitwalker.eu/
+
 杂项 https://github.com/pzxwhc/MineKnowContainer
+
 swagger 文档 
 https://github.com/swagger-api/swagger-core/wiki/Annotations#apimodel http://springfox.github.io/springfox/docs/current/
+
 java 8
 https://www.ibm.com/developerworks/cn/java/j-lo-java8streamapi/
+
 http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
+
 https://segmentfault.com/q/1010000005054853
+
 http://www.codeyyy.com/java/index.html
+
 https://www.oschina.net/translate/hacking-lambda-expressions-in-java
+
 反射工具 https://github.com/ronmamo/reflections
+
 restful
 https://github.com/aisuhua/restful-api-design-references
+
 https://www.oschina.net/translate/restful-api-designing-guidelines-the-best-practices?lang=chs&page=1#
+
 http://5.course.uprogrammer.cn/restful-with-spring-cn/chapter1/section3.html
+
 RESTful文档管理 https://apiary.io/
+
 api设计
 https://github.com/shieldfy/API-Security-Checklist/blob/master/README-zh.md
+
 https://github.com/yosriady/api-development-tools
+
 JWT
 http://www.jianshu.com/p/576dbf44b2ae
+
 https://segmentfault.com/q/1010000004537698
+
 http://blog.csdn.net/a82793510/article/details/53509427
+
 http://blog.csdn.net/carrie__yang/article/details/72867962
+
 http://blog.leapoahead.com/2015/09/07/user-authentication-with-jwt/
 PDF
 
 https://github.com/JonathanLink/PDFLayoutTextStripper
+
 https://github.com/itext/itextpdf
+
 https://github.com/jmrozanec/pdf-converter
+
 spring https://my.oschina.net/u/3080373/blog/1438733
 
 RequestMapping 使用使用示例 https://www.oschina.net/translate/using-the-spring-requestmapping-annotation
