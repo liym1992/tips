@@ -1,6 +1,7 @@
 ## git
 
-https://github.com/521xueweihan/git-tips
+yujunhao8831
+
 ## java
 + jackson 字段动态过滤 
   - https://github.com/bohnman/squiggly-filter-jackson
