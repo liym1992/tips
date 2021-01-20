@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-01-20T03:40:09.970Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="wPaNSBP4e74l_ugwIJco" version="14.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-20T04:30:25.346Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="CkS552nxAWo9KlV6P7no" version="14.1.9" type="github">
   <diagram id="tEZok7O5twctMSrRD2sH" name="第 1 页">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="TS-0E5JR7jDzZcB04G1X-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="50" width="1070" height="550" as="geometry" />
+          <mxGeometry x="50" y="50" width="1110" height="750" as="geometry" />
         </mxCell>
         <mxCell id="TS-0E5JR7jDzZcB04G1X-2" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="320" y="110" width="190" height="360" as="geometry" />
@@ -25,7 +25,7 @@
         <mxCell id="TS-0E5JR7jDzZcB04G1X-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TS-0E5JR7jDzZcB04G1X-5" target="TS-0E5JR7jDzZcB04G1X-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="TS-0E5JR7jDzZcB04G1X-5" value="鉴权插件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="TS-0E5JR7jDzZcB04G1X-5" value="(黑名单)鉴权插件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="350" y="305" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="TS-0E5JR7jDzZcB04G1X-6" value="下一个插件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -40,8 +40,8 @@
         <mxCell id="TS-0E5JR7jDzZcB04G1X-13" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="TS-0E5JR7jDzZcB04G1X-12" target="TS-0E5JR7jDzZcB04G1X-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="TS-0E5JR7jDzZcB04G1X-12" value="从本地缓存读取token，匹配则放行；否则读取redis，如果存在本地缓存续期60秒，反正提示4012" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="80" y="255" width="180" height="140" as="geometry" />
+        <mxCell id="TS-0E5JR7jDzZcB04G1X-12" value="1、在三户中心获取到全局uri，保存在本地缓存，如果三户中心不更新uri则一直保存在本地缓存中&lt;br&gt;2、判断请求的rui是否在全局uri中，存在则进入后面逻辑，反之放行&lt;br&gt;3、拿用户传入的token在本地获取用户角色ids，如果不缓存则获取redis，如果存在缓存到本地续期60秒，反之返回4016&lt;br&gt;4、角色id在本地缓存获取uri，如果不存在去redis获取，如果存在缓存到本地60秒，放行，反之记录不存在&lt;br&gt;5、在第4步，如果uri记录都不存在则返回4016" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="310" width="180" height="140" as="geometry" />
         </mxCell>
         <mxCell id="TS-0E5JR7jDzZcB04G1X-14" value="Redis" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="820" y="245" width="100" height="90" as="geometry" />
@@ -68,6 +68,24 @@
         </mxCell>
         <mxCell id="TS-0E5JR7jDzZcB04G1X-23" value="拿登记的uri 和 用户角色里的uri对比是否相等，相等则放行，反正4016" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="861" y="371" width="189" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="TS-0E5JR7jDzZcB04G1X-29" value="网关 认证插件和鉴权插件逻辑" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="70" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TS-0E5JR7jDzZcB04G1X-32" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=17;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="520" width="660" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="TS-0E5JR7jDzZcB04G1X-33" value="返回4016的情况和解决方案" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="340" y="540" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TS-0E5JR7jDzZcB04G1X-34" value="&lt;font style=&quot;font-size: 15px&quot;&gt;问题描述：&lt;br style=&quot;font-size: 15px&quot;&gt;在redis的token失效前，认证插件获取token在本地缓存60秒，到了鉴权插件去拿token获取角色时redis数据已失效。则会出现60秒左右的4016，过60秒后认证插件的缓存也失效了，则返回4012&lt;br style=&quot;font-size: 15px&quot;&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="340" y="575" width="200" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="TS-0E5JR7jDzZcB04G1X-35" value="解决方案一：&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span&gt;启用白名单插件&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="630" y="600" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TS-0E5JR7jDzZcB04G1X-36" value="解决方案二：&lt;br&gt;&lt;div&gt;三户中心配合调整，获取角色id的方式从token更换成user_id&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="790" y="612.5" width="130" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
