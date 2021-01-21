@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-21T09:13:28.200Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="NUJW9Z_0W612K2QkusSL" version="14.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-21T09:37:57.584Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="7MuLMK03H0yhMO3Vajhl" version="14.1.9" type="github">
   <diagram id="daPi5bpaG_95s4g8IG5k" name="第 1 页">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -114,7 +114,7 @@
             <mxPoint x="399" y="940" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Eifh44HfXir9j3BkBVKi-57" value="触发限流，503服务不可用" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;fontSize=14;" edge="1" parent="1">
+        <mxCell id="Eifh44HfXir9j3BkBVKi-57" value="触发限流，429服务不可用" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;fontSize=14;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="350" y="1020" as="sourcePoint" />
             <mxPoint x="160" y="1020" as="targetPoint" />
